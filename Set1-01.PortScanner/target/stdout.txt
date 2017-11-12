@@ -1,0 +1,3 @@
+Port 26850 is open
+Port 10145 is open
+Port 22660 is open
