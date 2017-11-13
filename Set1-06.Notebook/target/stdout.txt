@@ -1,0 +1,602 @@
+02:50:48.461 [TestRunner thread] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sec.notebook.NotebookTest]
+02:50:48.488 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:50:48.520 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:50:48.615 [TestRunner thread] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sec.notebook.NotebookTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:50:48.654 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sec.notebook.NotebookTest], using SpringBootContextLoader
+02:50:48.665 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.notebook.NotebookTest]: class path resource [sec/notebook/NotebookTest-context.xml] does not exist
+02:50:48.666 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.notebook.NotebookTest]: class path resource [sec/notebook/NotebookTestContext.groovy] does not exist
+02:50:48.671 [TestRunner thread] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sec.notebook.NotebookTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:50:48.673 [TestRunner thread] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sec.notebook.NotebookTest]: NotebookTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:50:48.798 [TestRunner thread] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sec.notebook.NotebookTest]
+02:50:48.904 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:50:48.907 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:50:48.907 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+02:50:48.924 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [sec/notebook/] to resources [URL [file:/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/test-classes/sec/notebook/], URL [file:/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook/]]
+02:50:48.925 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/test-classes/sec/notebook]
+02:50:48.925 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/test-classes/sec/notebook] for files matching pattern [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/test-classes/sec/notebook/*.class]
+02:50:48.930 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook]
+02:50:48.931 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook] for files matching pattern [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook/*.class]
+02:50:48.931 [TestRunner thread] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:sec/notebook/*.class] to resources [file [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/test-classes/sec/notebook/NotebookTest.class], file [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook/NotebookApplication.class], file [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook/NotebookController.class]]
+02:50:49.023 [TestRunner thread] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook/target/classes/sec/notebook/NotebookApplication.class]
+02:50:49.034 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sec.notebook.NotebookApplication for test class sec.notebook.NotebookTest
+02:50:49.041 [TestRunner thread] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sec.notebook.NotebookTest]: using defaults.
+02:50:49.058 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:50:49.075 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+02:50:49.080 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+02:50:49.082 [TestRunner thread] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30c4b9b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52534b77, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58ef92f4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4f83ad2a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a9f8c5a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@125f6c8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@36032400, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@643b3517, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42e08896, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b32af43]
+02:50:49.088 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.notebook.NotebookTest]
+02:50:49.089 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.notebook.NotebookTest]
+02:50:49.091 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.notebook.NotebookTest]
+02:50:49.092 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.notebook.NotebookTest]
+02:50:49.098 [TestRunner thread] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@14c9a0db testClass = NotebookTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@66ef05fa testClass = NotebookTest, locations = '{}', classes = '{class sec.notebook.NotebookApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@bdefaf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@559fd8c2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3530d10b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+02:50:49.100 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.notebook.NotebookTest]
+02:50:49.100 [TestRunner thread] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.notebook.NotebookTest]
+02:50:50.401 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.WebClient - Get page for window named '', using WebRequest[<url="about:blank", GET, EncodingType[name=application/x-www-form-urlencoded], [], {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, Accept-Encoding=gzip, deflate}, null>]
+02:50:50.467 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.WebWindowImpl - setEnclosedPage: HtmlPage(about:blank)@1534754130
+02:50:50.468 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.WebWindowImpl - destroyChildren
+02:50:50.761 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.util.EncodingSniffer - Encoding found in HTTP headers: 'UTF-8'.
+02:50:50.794 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgForeignObject to SVGForeignObjectElement
+02:50:50.794 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDiffuseLighting to SVGFEDiffuseLightingElement
+02:50:50.794 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSpan to HTMLSpanElement
+02:50:50.794 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeygen to HTMLSpanElement
+02:50:50.795 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeColorMatrix to SVGFEColorMatrixElement
+02:50:50.795 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDivision to HTMLDivElement
+02:50:50.795 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMarquee to HTMLDivElement
+02:50:50.795 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTime to HTMLTimeElement
+02:50:50.795 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDistantLight to SVGFEDistantLightElement
+02:50:50.796 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrameSet to HTMLFrameSetElement
+02:50:50.796 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOption to HTMLOptionElement
+02:50:50.796 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFlood to SVGFEFloodElement
+02:50:50.796 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBase to HTMLBaseElement
+02:50:50.796 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMap to HTMLMapElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSelect to HTMLSelectElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMetadata to SVGMetadataElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgUse to SVGUseElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHorizontalRule to HTMLHRElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRadialGradient to SVGRadialGradientElement
+02:50:50.797 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMergeNode to SVGFEMergeNodeElement
+02:50:50.798 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTemplate to HTMLTemplateElement
+02:50:50.798 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDirectory to HTMLDirectoryElement
+02:50:50.798 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlForm to HTMLFormElement
+02:50:50.798 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOutput to HTMLOutputElement
+02:50:50.798 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnorderedList to HTMLUListElement
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncA to SVGFEFuncAElement
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to External
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVideo to HTMLVideoElement
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineFrame to HTMLIFrameElement
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to ClientRectList
+02:50:50.799 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTextPath to SVGTextPathElement
+02:50:50.800 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBreak to HTMLBRElement
+02:50:50.800 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentFragment to DocumentFragment
+02:50:50.800 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeConvolveMatrix to SVGFEConvolveMatrixElement
+02:50:50.800 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to OfflineResourceList
+02:50:50.800 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolygon to SVGPolygonElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFrame to HTMLFrameElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAnchor to HTMLAnchorElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenuItem to HTMLMenuItemElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLinearGradient to SVGLinearGradientElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComponentTransfer to SVGFEComponentTransferElement
+02:50:50.801 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTitle to HTMLTitleElement
+02:50:50.802 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBackgroundSound to HTMLBGSoundElement
+02:50:50.802 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPath to SVGPathElement
+02:50:50.802 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgEllipse to SVGEllipseElement
+02:50:50.802 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomProcessingInstruction to ProcessingInstruction
+02:50:50.802 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to HTMLOptionsCollection
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeComposite to SVGFECompositeElement
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeta to HTMLMetaElement
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMarker to SVGMarkerElement
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDefs to SVGDefsElement
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDataList to HTMLDataListElement
+02:50:50.803 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTile to SVGFETileElement
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomText to Text
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionList to HTMLDListElement
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFePointLight to SVGFEPointLightElement
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOrderedList to HTMLOListElement
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlOptionGroup to HTMLOptGroupElement
+02:50:50.804 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFont to HTMLFontElement
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPicture to HTMLPictureElement
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLabel to HTMLLabelElement
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgCircle to SVGCircleElement
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomCDataSection to CDATASection
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlImage to HTMLImageElement
+02:50:50.805 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to CSSGroupingRule
+02:50:50.806 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateTransform to SVGAnimateTransformElement
+02:50:50.806 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMorphology to SVGFEMorphologyElement
+02:50:50.806 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlContent to HTMLContentElement
+02:50:50.806 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFilter to SVGFilterElement
+02:50:50.806 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTextArea to HTMLTextAreaElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomComment to Comment
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAltGlyph to SVGAltGlyphElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlObject to HTMLObjectElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPattern to SVGPatternElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBody to HTMLBodyElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTSpan to SVGTSpanElement
+02:50:50.807 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeMerge to SVGFEMergeElement
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBlockQuote to HTMLQuoteElement
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInlineQuotation to HTMLQuoteElement
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInput to HTMLInputElement
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpecularLighting to SVGFESpecularLightingElement
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomAttr to Attr
+02:50:50.808 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumnGroup to HTMLTableColElement
+02:50:50.809 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableColumn to HTMLTableColElement
+02:50:50.809 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCaption to HTMLTableCaptionElement
+02:50:50.809 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnknownElement to HTMLUnknownElement
+02:50:50.816 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMenu to HTMLMenuElement
+02:50:50.817 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlInsertedText to HTMLModElement
+02:50:50.817 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDeletedText to HTMLModElement
+02:50:50.817 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListItem to HTMLLIElement
+02:50:50.818 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to CSSConditionRule
+02:50:50.818 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStyle to HTMLStyleElement
+02:50:50.819 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmbed to HTMLEmbedElement
+02:50:50.819 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgElement to SVGElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMask to SVGMaskElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAudio to HTMLAudioElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSymbol to SVGSymbolElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHtml to HTMLHtmlElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to SVGGeometryElement
+02:50:50.820 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlProgress to HTMLProgressElement
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to DOMRect
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to SVGGraphicsElement
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableRow to HTMLTableRowElement
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to Geolocation
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMeter to HTMLMeterElement
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlButton to HTMLButtonElement
+02:50:50.821 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading4 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading5 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading3 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading2 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading6 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeading1 to HTMLHeadingElement
+02:50:50.822 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLegend to HTMLLegendElement
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeOffset to SVGFEOffsetElement
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSvg to SVGSVGElement
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFieldSet to HTMLFieldSetElement
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgTitle to SVGTitleElement
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomElement to Element
+02:50:50.823 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStyle to SVGStyleElement
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgImage to SVGImageElement
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to Console
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping java.lang.Object to EventTarget
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.DomDocumentType to DocumentType
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSource to HTMLSourceElement
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParagraph to HTMLParagraphElement
+02:50:50.824 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlApplet to HTMLAppletElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSwitch to SVGSwitchElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeImage to SVGFEImageElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgLine to SVGLineElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeGaussianBlur to SVGFEGaussianBlurElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgSet to SVGSetElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTable to HTMLTableElement
+02:50:50.825 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArticle to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoEmbed to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlKeyboard to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlListing to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCenter to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlWordBreak to HTMLElement
+02:50:50.826 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSuperscript to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlVariable to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNav to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrong to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionDescription to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHeader to HTMLElement
+02:50:50.827 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoScript to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAside to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPlainText to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMain to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoFrames to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlS to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSample to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlMark to HTMLElement
+02:50:50.828 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlItalic to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigure to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlElement to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCitation to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSection to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBidirectionalOverride to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCode to HTMLElement
+02:50:50.829 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlExample to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSubscript to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFigureCaption to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlFooter to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTeletype to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlUnderlined to HTMLElement
+02:50:50.830 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAbbreviated to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinitionTerm to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlEmphasis to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBig to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBaseFont to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlNoBreak to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlSmall to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAcronym to HTMLElement
+02:50:50.831 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlAddress to HTMLElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlDefinition to HTMLElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlStrike to HTMLElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlBold to HTMLElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTrack to HTMLTrackElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgText to SVGTextElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgStop to SVGStopElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgView to SVGViewElement
+02:50:50.832 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgScript to SVGScriptElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlScript to HTMLScriptElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgMPath to SVGMPathElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgPolyline to SVGPolylineElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncG to SVGFEFuncGElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncR to SVGFEFuncRElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlParameter to HTMLParamElement
+02:50:50.833 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeBlend to SVGFEBlendElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgRect to SVGRectElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableCell to HTMLTableCellElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgDesc to SVGDescElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgGroup to SVGGElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimateMotion to SVGAnimateMotionElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnchor to SVGAElement
+02:50:50.834 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgAnimate to SVGAnimateElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlLink to HTMLLinkElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeTurbulence to SVGFETurbulenceElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlHead to HTMLHeadElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeDisplacementMap to SVGFEDisplacementMapElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlArea to HTMLAreaElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableHeader to HTMLTableSectionElement
+02:50:50.835 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableBody to HTMLTableSectionElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlTableFooter to HTMLTableSectionElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlData to HTMLDataElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgClipPath to SVGClipPathElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeFuncB to SVGFEFuncBElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlPreformattedText to HTMLPreElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.svg.SvgFeSpotLight to SVGFESpotLightElement
+02:50:50.836 [TestRunner thread] DEBUG com.gargoylesoftware.htmlunit.javascript.configuration.AbstractJavaScriptConfiguration - Mapping com.gargoylesoftware.htmlunit.html.HtmlCanvas to HTMLCanvasElement
+02:50:50.906 [TestRunner thread] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@14c9a0db testClass = NotebookTest, testInstance = sec.notebook.NotebookTest@6c0deb7f, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@66ef05fa testClass = NotebookTest, locations = '{}', classes = '{class sec.notebook.NotebookApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@bdefaf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@559fd8c2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3530d10b], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+02:50:50.981 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+02:50:50.982 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+02:50:50.983 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+02:50:51.002 [TestRunner thread] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+02:50:51.003 [TestRunner thread] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2017-11-13 02:50:52.183  INFO 12924 --- [stRunner thread] sec.notebook.NotebookTest                : Starting NotebookTest on taylan-R580-R590 with PID 12924 (started by root in /root/NetBeansProjects/mooc-securing-software-2017/Set1-06.Notebook)
+2017-11-13 02:50:52.185  INFO 12924 --- [stRunner thread] sec.notebook.NotebookTest                : No active profile set, falling back to default profiles: default
+2017-11-13 02:50:52.722  INFO 12924 --- [stRunner thread] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6229576a: startup date [Mon Nov 13 02:50:52 EET 2017]; root of context hierarchy
+2017-11-13 02:50:55.775  INFO 12924 --- [stRunner thread] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2017-11-13 02:50:55.810  INFO 12924 --- [stRunner thread] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-11-13 02:50:55.812  INFO 12924 --- [stRunner thread] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-11-13 02:50:56.035  INFO 12924 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-13 02:50:56.036  INFO 12924 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3320 ms
+2017-11-13 02:50:56.354  INFO 12924 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-13 02:50:56.363  INFO 12924 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-13 02:50:56.364  INFO 12924 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-13 02:50:56.364  INFO 12924 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-13 02:50:56.365  INFO 12924 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-13 02:50:57.768  INFO 12924 --- [stRunner thread] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6229576a: startup date [Mon Nov 13 02:50:52 EET 2017]; root of context hierarchy
+2017-11-13 02:50:57.931  INFO 12924 --- [stRunner thread] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String sec.notebook.NotebookController.home(org.springframework.ui.Model,java.lang.String)
+2017-11-13 02:50:57.939  INFO 12924 --- [stRunner thread] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-13 02:50:57.940  INFO 12924 --- [stRunner thread] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-13 02:50:58.019  INFO 12924 --- [stRunner thread] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-13 02:50:58.020  INFO 12924 --- [stRunner thread] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-13 02:50:58.124  INFO 12924 --- [stRunner thread] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-13 02:50:59.401  INFO 12924 --- [stRunner thread] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 46439 (http)
+2017-11-13 02:50:59.410  INFO 12924 --- [stRunner thread] sec.notebook.NotebookTest                : Started NotebookTest in 8.399 seconds (JVM running for 11.607)
+2017-11-13 02:50:59.670  INFO 12924 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-13 02:50:59.670  INFO 12924 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-13 02:50:59.701  INFO 12924 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-11-13 02:50:59.964 ERROR 12924 --- [o-auto-1-exec-1] o.thymeleaf.templateparser.ErrorHandler  : [THYMELEAF][http-nio-auto-1-exec-1] Fatal error during parsing
+
+org.xml.sax.SAXParseException: The value of attribute "th:if" associated with an element type "li" must not contain the '<' character.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.scanAttributeValue(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanAttribute(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-11-13 02:50:59.969 ERROR 12924 --- [o-auto-1-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-auto-1-exec-1] Exception processing template "index": Exception parsing document: template="index", line 15 - column 39
+2017-11-13 02:50:59.975 ERROR 12924 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 15 - column 39] with root cause
+
+org.xml.sax.SAXParseException: The value of attribute "th:if" associated with an element type "li" must not contain the '<' character.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.scanAttributeValue(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanAttribute(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-11-13 02:51:00.208  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [sec.notebook.NotebookTest], using SpringBootContextLoader
+2017-11-13 02:51:00.209  INFO 12924 --- [stRunner thread] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [sec.notebook.NotebookTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-11-13 02:51:00.209  INFO 12924 --- [stRunner thread] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [sec.notebook.NotebookTest]: NotebookTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-11-13 02:51:00.216  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration sec.notebook.NotebookApplication for test class sec.notebook.NotebookTest
+2017-11-13 02:51:00.221  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-11-13 02:51:00.225  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-11-13 02:51:00.227  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+2017-11-13 02:51:00.228  INFO 12924 --- [stRunner thread] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bfd2c49, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5517a4c3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@37a00b6f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@206c6b9c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@32e194bc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a381f9f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6df48cc4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2e872a6d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10fd0f75, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a233e12]
+2017-11-13 02:51:00.275 ERROR 12924 --- [o-auto-1-exec-2] o.thymeleaf.templateparser.ErrorHandler  : [THYMELEAF][http-nio-auto-1-exec-2] Fatal error during parsing
+
+org.xml.sax.SAXParseException: The value of attribute "th:if" associated with an element type "li" must not contain the '<' character.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.scanAttributeValue(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanAttribute(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source) [xercesImpl-2.11.0.jar:na]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) [thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-11-13 02:51:00.276 ERROR 12924 --- [o-auto-1-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-auto-1-exec-2] Exception processing template "index": Exception parsing document: template="index", line 15 - column 39
+2017-11-13 02:51:00.278 ERROR 12924 --- [o-auto-1-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 15 - column 39] with root cause
+
+org.xml.sax.SAXParseException: The value of attribute "th:if" associated with an element type "li" must not contain the '<' character.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLScanner.scanAttributeValue(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanAttribute(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:na]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2017-11-13 02:51:00.362  INFO 12924 --- [       Thread-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6229576a: startup date [Mon Nov 13 02:50:52 EET 2017]; root of context hierarchy
